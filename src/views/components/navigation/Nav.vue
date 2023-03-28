@@ -27,10 +27,10 @@
       <div class="profile">
         <ul class="profile-list">
           <li>
-            <router-link :to="`/home`">{{ $t('nav.signup') }}</router-link>
+            <router-link class="signUp" :to="`/home`">{{ $t('nav.signup') }}</router-link>
           </li>
           <li>
-            <router-link :to="`/home`">{{ $t('nav.signin') }}</router-link>
+            <router-link class="signIn" :to="`/home`">{{ $t('nav.signin') }}</router-link>
           </li>
         </ul>
       </div>

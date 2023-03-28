@@ -103,6 +103,18 @@
             float: right;
             color: var(--color);
           }
+
+          .signUp {
+            padding: 10px;
+            border-radius: 10px;
+            background: #3c4042;
+          }
+
+          .signIn {
+            padding: 10px;
+            border-radius: 10px;
+            background: midnightblue;
+          }
         }
       }
     }
