@@ -1,0 +1,148 @@
+[v-cloak]>* {
+  display: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+#Navigation {
+
+  .navigation {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    width: 100%;
+    padding: 14px 6px;
+    z-index: 5;
+    transition: all 0.5s ease;
+    background-color: var(--background);
+    z-index: 2;
+
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      width: -moz-fit-content;
+      width: fit-content;
+
+      .logo-icon {
+        transition: all 0.5s ease;
+        height: 30px;
+        text-align: left;
+        padding-left: 20px;
+      }
+    }
+
+    .nav {
+
+      .nav-list {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+
+        li {
+          position: relative;
+          list-style: none;
+          list-style-type: none;
+          right: 0;
+          margin: 0.5rem 1.25rem 0.5rem 1.25rem;
+          float: right;
+
+          a {
+            display: flex;
+            height: 100%;
+            width: 100%;
+            border-radius: 12px;
+            align-items: center;
+            text-decoration: none;
+            transition: all 0.4s ease;
+            float: right;
+            color: var(--color);
+          }
+
+          .router-link-active {
+            background-color: var(--isActiveBackground);
+            padding: 10px;
+          }
+        }
+      }
+    }
+
+    .profile {
+
+      .profile-list {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+        align-items: center;
+
+        li {
+          position: relative;
+          list-style: none;
+          list-style-type: none;
+          right: 0;
+          margin: 0.5rem 1.25rem 0.5rem 1.25rem;
+          float: right;
+
+          a {
+            display: flex;
+            height: 100%;
+            width: 100%;
+            border-radius: 12px;
+            align-items: center;
+            text-decoration: none;
+            transition: all 0.4s ease;
+            float: right;
+            color: var(--color);
+          }
+
+          .signUp {
+            padding: 10px;
+            border-radius: 10px;
+            background: #3c4042;
+          }
+
+          .signIn {
+            padding: 10px;
+            border-radius: 10px;
+            background: midnightblue;
+          }
+        }
+      }
+    }
+
+    .home-section {
+      min-height: 100vh;
+      z-index: 2;
+      transition: all 0.5s ease;
+    }
+
+    .home-section .text {
+      display: inline-block;
+      color: var(--color);
+      font-size: 25px;
+      font-weight: 500;
+      margin: 18px;
+    }
+  }
+}
+
+.dark {
+  --background: #1d1f20;
+  --color: #ddd;
+  --isActiveBackground: #3c4042;
+}
+
+.light {
+  --background: #ddd;
+  --color: #1d1f20;
+  --isActiveBackground: #ddd;
+}

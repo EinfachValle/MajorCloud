@@ -1,1 +1,10 @@
-{}
+{
+  "nav": {
+    "home": "Über Neatbeat",
+    "orders": "Aufträge",
+    "job": "Jobbörse",
+    "new": "Neuerscheinungen",
+    "signup": "Konto erstellen",
+    "signin": "Anmelden"
+  }
+}
