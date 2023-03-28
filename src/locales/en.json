@@ -1,1 +1,10 @@
-{}
+{
+  "nav": {
+    "home": "About Neatbeat",
+    "orders": "Orders",
+    "job": "Job Market",
+    "new": "New Publications",
+    "signup": "Sign Up",
+    "signin": "Sign In"
+  }
+}

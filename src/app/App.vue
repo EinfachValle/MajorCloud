@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" :class="currentTheme ? 'dark' : 'light'">
     <div id="Page404" v-if="this.$route.path.startsWith('/404')">
         <page-404>
           <div></div>
@@ -7,9 +7,11 @@
       </div>
 
       <div id="View" v-else>
-        <div :toggleTheme="toggleTheme" :currentTheme="currentTheme">
-            <router-view></router-view>
-        </div>
+          <Navigation :toggleTheme="toggleTheme" :currentTheme="currentTheme">
+            <div>
+              <router-view></router-view>
+            </div>
+          </Navigation>
       </div>
   </div>
 </template>
