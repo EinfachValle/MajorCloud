@@ -2,17 +2,20 @@
   "name": "neat-beat",
   "version": "1.0.0",
   "private": true,
+  "description": "This template should help get you started developing with Vue 3 in Vite.",
+  "author": "Valentin Röhle",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "preview": "vite preview",
-    "test:e2e": "start-server-and-test preview http://localhost:4173 'cypress run --e2e'",
-    "test:e2e:dev": "start-server-and-test 'vite dev --port 4173' http://localhost:4173 'cypress open --e2e'",
     "test:unit": "cypress run --component",
-    "test:unit:dev": "cypress open --component",
-    "format": "prettier --write src/"
+    "test:e2e": "start-server-and-test preview http://localhost:4173 'cypress run --e2e'",
+    "lint": "vue-cli-service lint",
+    "format": "prettier --write src/",
+    "preview": "vite preview",
+    "test:e2e:dev": "start-server-and-test 'vite dev --port 4173' http://localhost:4173 'cypress open --e2e'",
+    "test:unit:dev": "cypress open --component"
   },
+  "main": "cypress.config.js",
   "dependencies": {
     "@actions/core": "^1.10.0",
     "@actions/github": "^5.1.1",
@@ -75,6 +78,7 @@
     "start-server-and-test": "^2.0.0",
     "style-loader": "^3.3.2",
     "vue-cli-plugin-i18n": "^2.3.2",
+    "vue-cli-plugin-vue-i18n": "~1.0.1",
     "vue-loader": "^17.0.1",
     "vue-template-compiler": "^2.7.14",
     "webpack": "^5.76.3",
@@ -82,23 +86,6 @@
     "webpack-dev-middleware": "^6.0.2",
     "webpack-hot-middleware": "^2.25.3"
   },
-  "description": "This template should help get you started developing with Vue 3 in Vite.",
-  "main": "cypress.config.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/EinfachValle/NeatBeat.git"
-  },
-  "keywords": [
-    "Music",
-    "coding",
-    "message"
-  ],
-  "author": "Valentin Röhle",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/EinfachValle/NeatBeat/issues"
-  },
-  "homepage": "https://github.com/EinfachValle/NeatBeat#readme",
   "eslintConfig": {
     "root": true,
     "env": {
@@ -151,11 +138,21 @@
       "^.+\\.vue$": "vue-jest"
     }
   },
+  "bugs": {
+    "url": "https://github.com/EinfachValle/NeatBeat/issues"
+  },
+  "homepage": "https://github.com/EinfachValle/NeatBeat#readme",
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
     }
   },
+  "keywords": [
+    "Music",
+    "coding",
+    "message"
+  ],
+  "license": "ISC",
   "lint-staged": {
     "**/*.js": [
       "eslint --quiet --fix --ext .js,.vue src/",
@@ -165,5 +162,9 @@
       "prettier --config ./.prettierrc --ignore-path ./.eslintignore --write",
       "git add"
     ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EinfachValle/NeatBeat.git"
   }
 }
