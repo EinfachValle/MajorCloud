@@ -1,7 +1,14 @@
 import Home from '../../pages/home/home.vue';
 
+import loader from '../loader/Loader.vue';
+
 export default {
   name: 'Navigation',
+  data() {
+    return {
+      loading: true,
+    };
+  },
   props: {
     toggleTheme: {
       type: Function,
@@ -14,5 +21,13 @@ export default {
   },
   components: {
     Home,
-  }
+    loader
+  },
+  async mounted() {
+    if (this.loading === true) {
+      setTimeout(() => {
+        this.loading = false;
+      }, 3000);
+    }
+  },
 }

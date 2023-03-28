@@ -1,0 +1,106 @@
+#Loader {
+
+  .centeredLoader {
+    position: fixed;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background: var(--background);
+
+    .loader {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      background-color: var(--background);
+      width: 100%;
+      height: 100%;
+      z-index: 100;
+
+      .loader-line {
+        width: .75rem;
+        height: .25rem;
+        border-radius: 10px;
+        background: #fff;
+        animation: musicloader 1.5s ease-in-out infinite;
+
+        &:nth-child(1) {
+          background-color: #d715d7;
+          animation-delay: 1s;
+        }
+
+        &:nth-child(2) {
+          background-color: #d71515;
+          animation-delay: 0.8s;
+        }
+
+        &:nth-child(3) {
+          background-color: #d71579;
+          animation-delay: 0.6s;
+        }
+
+        &:nth-child(4) {
+          background-color: #d76715;
+          animation-delay: 0.4s;
+        }
+
+        &:nth-child(5) {
+          background-color: #d7c415;
+          animation-delay: 0.2s;
+        }
+
+        &:nth-child(6) {
+          background-color: #d7c415;
+          animation-delay: 0.2s;
+        }
+
+        &:nth-child(7) {
+          background-color: #d76715;
+          animation-delay: 0.4s;
+        }
+
+        &:nth-child(8) {
+          background-color: #d71579;
+          animation-delay: 0.6s;
+        }
+
+        &:nth-child(9) {
+          background-color: #d71515;
+          animation-delay: 0.8s;
+        }
+
+        &:nth-child(10) {
+          background-color: #d715d7;
+          animation-delay: 1s;
+        }
+      }
+    }
+  }
+}
+
+@keyframes musicloader {
+  0% {
+    height: 4px;
+  }
+
+  50% {
+    height: 90px;
+  }
+
+  100% {
+    height: 4px;
+
+  }
+}
+
+.dark {
+  --background: #1d1f20;
+}
+
+.light {
+  --background: #ddd;
+}
