@@ -1,0 +1,49 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "node": true
+  },
+  "globals": {
+    "__webpack_require__": "readonly"
+  },
+  "extends": [
+    "plugin:vue/base"
+  ],
+  "rules": {
+    "linebreak-style": 0,
+    "comma-dangle": 0,
+    "no-plusplus": 0,
+    "prefer-template": 0,
+    "func-names": 0,
+    "no-console": "error",
+    "no-constant-condition": "error",
+    "no-alert": "error",
+    "class-methods-use-this": 0,
+    "no-param-reassign": [
+      "error",
+      {
+        "props": false
+      }
+    ],
+    "no-bitwise": [
+      "error",
+      {
+        "allow": [
+          "~"
+        ]
+      }
+    ],
+    "no-new": 0
+  },
+  "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "parser": "babel-eslint",
+        "ecmaFeatures": {
+            "modules": true,
+            "experimentalObjectRestSpread": true
+        }
+  }
+}
