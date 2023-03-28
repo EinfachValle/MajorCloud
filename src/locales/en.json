@@ -6,5 +6,9 @@
     "new": "New Publications",
     "signup": "Sign Up",
     "signin": "Sign In"
+  },
+  "footer": {
+    "agb": "Privacy",
+    "impressum": "Imprint"
   }
 }

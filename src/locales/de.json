@@ -6,5 +6,9 @@
     "new": "Neuerscheinungen",
     "signup": "Konto erstellen",
     "signin": "Anmelden"
+  },
+  "footer": {
+    "agb": "Datenschutz",
+    "impressum": "Impressum"
   }
 }
