@@ -40,7 +40,7 @@
   "parserOptions": {
         "ecmaVersion": 6,
         "sourceType": "module",
-        "parser": "babel-eslint",
+        "parser": "@babel/eslint-parser",
         "ecmaFeatures": {
             "modules": true,
             "experimentalObjectRestSpread": true
