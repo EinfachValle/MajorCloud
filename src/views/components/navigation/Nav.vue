@@ -1,5 +1,6 @@
 <template>
   <div id="Navigation">
+    <loader v-if="this.loading" class="loader"></loader>
     <div class="navigation">
       <div class="logo">
         <router-link :to="`/home`">
