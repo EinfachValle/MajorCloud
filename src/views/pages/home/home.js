@@ -1,3 +1,4 @@
+import { register } from 'swiper/element/bundle';
 
 export default {
   name: 'HomePage',
@@ -16,5 +17,8 @@ export default {
       type: Boolean,
       default: () => true
     },
+  },
+  mounted() {
+    register();
   },
 }
