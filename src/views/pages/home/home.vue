@@ -32,7 +32,9 @@
     </section>
     <section id="sec2">
       <div class="content">
-        <div class="swiper"></div>
+        <div class="swiper">
+          <Slider></Slider>
+        </div>
         <div class="text-block">
           <div class="text">
             <div class="t1">
