@@ -6,11 +6,13 @@ import log from 'js-logger';
 import moment from 'moment-timezone';
 import i18n from './i18n';
 import axios from 'axios';
+import VueSplide from '@splidejs/vue-splide';
 // import redis from 'redis';
 
 const app = createApp(App);
 app.use(i18n);
 app.use(moment);
+app.use( VueSplide );
 app.use(router);
 app.use(createPinia());
 app.mount('#app');
