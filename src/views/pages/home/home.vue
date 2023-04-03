@@ -38,7 +38,7 @@
         <div class="text-block">
           <div class="text">
             <div class="t1">
-              <h1>Finde deinen Artist</h1>
+              <h1>Finde deinen Artist!</h1>
             </div>
             <div class="t2">
               <h2>Gib deinen Text deine eigene Stimme. Durch unseren
