@@ -7,6 +7,7 @@
     height: 100vh;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     margin: 0;
     font-family: sans-serif;
@@ -64,6 +65,12 @@
     }
 
     #swipe-elements {
+      display: flex;
+      flex-direction: row;
+      padding-top: 100px;
+      position: relative;
+      float: left;
+      padding-right: 200px;
 
       button {
         border: none;
