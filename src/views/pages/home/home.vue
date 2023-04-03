@@ -54,7 +54,24 @@
       </div>
     </section>
     <section id="sec3">
-      <h1>Section 3</h1>
+      <div class="content">
+        <div class="section-name">
+          <h1>Letzte Veröffentlichungen auf Neatbeat</h1>
+        </div>
+        <div class="releases">
+          <div class="cover">
+            <img src="../../../assets/img/cover/cover-cro.jpg" alt="cover">
+          </div>
+          <div class="text">
+            <div class="title">
+              <p>NICE! Beat by CRO</p>
+            </div>
+            <div class="subtitle">
+              <p>Miksu & Macloud feat. CRO</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </div>
 </template>
