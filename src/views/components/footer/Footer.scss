@@ -1,0 +1,144 @@
+#Footer {
+
+  .footer {
+    width: 100%;
+    color: var(--color);
+    background-color: var(--background);
+
+    .content {
+      padding: 0 30px;
+
+      .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: -moz-fit-content;
+        width: fit-content;
+        padding-bottom: 50px;
+        width: 100%;
+
+        .logo-icon {
+          transition: all 0.5s ease;
+          height: 30px;
+          text-align: left;
+          padding-left: 20px;
+        }
+      }
+
+      .text-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        .textbox {
+          align-items: baseline;
+          display: flex;
+          flex-direction: column;
+          padding: 0 50px;
+
+          .title {
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: larger;
+            text-align: center;
+            padding-bottom: 10px;
+          }
+
+          .sub {
+            color: var(--light-color);
+            font-weight: lighter;
+          }
+        }
+      }
+
+      .social {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .social-links {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+
+          .sm {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            a {
+              text-decoration: none;
+              color: cyan;
+
+              i {
+                width: 50px;
+                height: 50px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                font-size: 30px;
+              }
+            }
+          }
+        }
+
+        .payments {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+          gap: 10px;
+
+          .payment {
+
+            a {
+
+              img {
+                width: 50px;
+              }
+            }
+          }
+        }
+      }
+
+      .copyright {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+
+        .copy {
+          display: flex;
+          justify-content: flex-start;
+        }
+
+        .imprint {
+          display: flex;
+          gap: 50px;
+          
+          .imprint-link {
+            display: flex;
+            justify-content: flex-end;
+
+            a {
+              text-decoration: none;
+              color: var(--color);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.dark {
+  --color: #ddd;
+  --background: #1d1f20;
+  --light-color: #8b8b8b;
+}
+
+.light {
+  --color: #1d1f20;
+  --background: #ddd;
+  --light-color: #484848;
+}
