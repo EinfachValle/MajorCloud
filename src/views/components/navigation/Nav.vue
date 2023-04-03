@@ -40,7 +40,8 @@
       <Home v-if="this.$route.name === 'HomePage'"></Home>
     </section>
     <footer>
-      <div class="footer">
+      <Footer></Footer>
+      <!-- <div class="footer">
         <div class="footer-content">
           <div class="content-left">
             <div class="logo">
@@ -76,7 +77,7 @@
             </ul>
           </div>
         </div>
-      </div>
+      </div> -->
     </footer>
   </div>
 </template>
