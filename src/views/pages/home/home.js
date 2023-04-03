@@ -1,3 +1,4 @@
+import Slider from '../../components/slider/Slider.vue';
 import { register } from 'swiper/element/bundle';
 
 export default {
@@ -7,7 +8,9 @@ export default {
 
     }
   },
-  components: {},
+  components: {
+    Slider
+  },
   props: {
     toggleTheme: {
       type: Function,
