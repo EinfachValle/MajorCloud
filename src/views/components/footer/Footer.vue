@@ -26,7 +26,7 @@
             <div class="sub sub-1">Über NeatBeat</div>
             <div class="sub sub-2">Über Codewave</div>
             <div class="sub sub-3">Logos & CI</div>
-            <div class="sub sub-4">Datenschutz</div>
+            <div class="sub sub-4">{{ $t('footer.privacy') }}</div>
           </div>
           <div class="textbox textbox-4">
             <div class="title">Support</div>
@@ -87,19 +87,19 @@
           </div>
           <div class="imprint">
             <div class="imprint-link link-1">
-              <router-link :to="`/home`">{{ $t('footer.parentsInformation') }}</router-link>
+              <router-link :to="`/informations`">{{ $t('footer.parentsInformation') }}</router-link>
             </div>
             <div class="imprint-link link-2">
-              <router-link :to="`/home`">{{ $t('footer.rightOfRecall') }}</router-link>
+              <router-link :to="`/rights`">{{ $t('footer.rightOfRecall') }}</router-link>
             </div>
             <div class="imprint-link link-3">
-              <router-link :to="`/home`">{{ $t('footer.agb') }}</router-link>
+              <router-link :to="`/agb`">{{ $t('footer.agb') }}</router-link>
             </div>
             <div class="imprint-link link-4">
-              <router-link :to="`/home`">{{ $t('footer.privacy') }}</router-link>
+              <router-link :to="`/privacy`">{{ $t('footer.privacy') }}</router-link>
             </div>
             <div class="imprint-link link-5">
-              <router-link :to="`/home`">{{ $t('footer.imprint') }}</router-link>
+              <router-link :to="`/imprint`">{{ $t('footer.imprint') }}</router-link>
             </div>
           </div>
         </div>
