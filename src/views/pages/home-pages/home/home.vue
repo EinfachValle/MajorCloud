@@ -60,7 +60,7 @@
         </div>
         <div class="releases">
           <div class="cover">
-            <img src="../../../assets/img/cover/cover-cro.jpg" alt="cover">
+            <img src="../../../../assets/img/cover/cover-cro.jpg" alt="cover">
           </div>
           <div class="text">
             <div class="title">
@@ -77,10 +77,6 @@
 </template>
 
 <script>
-  import {
-    SwiperContainer,
-    SwiperSlide
-  } from 'swiper/element';
   import Home from './home';
 
   export default Home;

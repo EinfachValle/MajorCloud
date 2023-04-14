@@ -1,4 +1,4 @@
-import Slider from '../../components/slider/Slider.vue';
+import Slider from '../../../components/slider/Slider.vue';
 import { register } from 'swiper/element/bundle';
 
 export default {
