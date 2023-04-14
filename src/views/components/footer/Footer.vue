@@ -87,19 +87,19 @@
           </div>
           <div class="imprint">
             <div class="imprint-link link-1">
-              <router-link :to="`/home`">Informationen für Eltern</router-link>
+              <router-link :to="`/home`">{{ $t('footer.parentsInformation') }}</router-link>
             </div>
             <div class="imprint-link link-2">
-              <router-link :to="`/home`">Wiederrufsrecht</router-link>
+              <router-link :to="`/home`">{{ $t('footer.rightOfRecall') }}</router-link>
             </div>
             <div class="imprint-link link-3">
-              <router-link :to="`/home`">AGB</router-link>
+              <router-link :to="`/home`">{{ $t('footer.agb') }}</router-link>
             </div>
             <div class="imprint-link link-4">
-              <router-link :to="`/home`">Datenschutz</router-link>
+              <router-link :to="`/home`">{{ $t('footer.privacy') }}</router-link>
             </div>
             <div class="imprint-link link-5">
-              <router-link :to="`/home`">Impressum</router-link>
+              <router-link :to="`/home`">{{ $t('footer.imprint') }}</router-link>
             </div>
           </div>
         </div>

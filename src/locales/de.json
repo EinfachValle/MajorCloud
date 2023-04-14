@@ -8,7 +8,10 @@
     "signin": "Anmelden"
   },
   "footer": {
-    "agb": "Datenschutz",
-    "impressum": "Impressum"
+    "privacy": "Datenschutz",
+    "imprint": "Impressum",
+    "agb": "AGB",
+    "rightOfRecall": "Widerrufsrecht",
+    "parentsInformation": "Informationen für Eltern"
   }
 }

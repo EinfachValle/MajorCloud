@@ -8,7 +8,10 @@
     "signin": "Sign In"
   },
   "footer": {
-    "agb": "Privacy",
-    "impressum": "Imprint"
+    "privacy": "Privacy",
+    "imprint": "Imprint",
+    "agb": "AGB",
+    "rightOfRecall": "Right of recall",
+    "parentsInformation": "Parents information"
   }
 }
