@@ -1,4 +1,4 @@
-import Home from '../../pages/home/home.vue';
+import Home from '../../pages/home-pages/home/home.vue';
 
 import loader from '../loader/Loader.vue';
 import Footer from '../footer/Footer.vue';

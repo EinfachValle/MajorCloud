@@ -7,7 +7,7 @@ import {
 import Page404 from '../views/pages/pageNotFound/page404.vue';
 
 // routes:
-import HomePage from '../views/pages/home/home.vue';
+import HomePage from '../views/pages/home-pages/home/home.vue';
 
 const routes = [
   {
