@@ -15,7 +15,6 @@ const log = new Logger();
 
 class User {
   constructor(username, password, email, requester) {
-    this.name = "create/delete/check User in Database User";
     this.username = username;
     this.passord = password;
     this.email = email;
@@ -86,6 +85,7 @@ class User {
                   `DB@createUser: ${results.affectedRows} row(s) affected`
                 )
               );
+              
             }
           );
         });
