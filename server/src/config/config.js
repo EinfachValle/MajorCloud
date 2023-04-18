@@ -11,6 +11,12 @@ const database = {
     USERTABLE: 'accounts'
 }
 
-const mailer = {}
+const mailer = {
+    HOST: "localhost",
+    PORT: 6000,
+    USERNAME: "nodemailer",
+    PASSWORD: "#35bT-015",
+    ADDRESS: "service@neatbeat.de"
+}
 
 module.exports = { env, database, mailer }
