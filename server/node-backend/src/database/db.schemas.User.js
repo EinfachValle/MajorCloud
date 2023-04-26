@@ -1,7 +1,7 @@
 const config = require("../config/config.js");
 const mysql = require("mysql");
 const bcrypt = require("bcrypt");
-const { Logger } = require("../logging/logging.Colors.js");
+const { Logger } = require("../../../node-frontend/src/logging/logging.Colors.js");
 
 const database = mysql.createConnection({
   host: config.database.HOSTNAME,

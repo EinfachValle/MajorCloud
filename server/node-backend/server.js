@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
@@ -14,7 +15,7 @@ app.use(express.json());
 
 //own Libraries
 const { User } = require("./src/database/db.schemas.User.js");
-const { Logger } = require("./src/logging/logging.Colors.js");
+const { Logger } = require("../node-frontend/src/logging/logging.Colors.js");
 
 //Environment Variables
 const config = require("./src/config/config.js");
@@ -44,7 +45,7 @@ database.connect(function (err) {
   );
 });
 
-app.post("/register", (req, res) => {
+app.post("/api/register", (req, res) => {
   username = req.body.username;
   password = req.body.password;
   email = req.body.email;
@@ -75,7 +76,7 @@ app.post("/register", (req, res) => {
   });
 });
 
-app.post("/login", (req, res) => {
+app.post("/api/login", (req, res) => {
   username = req.body.username;
   password = req.body.password;
   email = req.body.email;
@@ -117,7 +118,7 @@ app.post("/login", (req, res) => {
 //make app listen on port set in the config file
 app.listen(config.env.PORT, () => {
   console.log(
-    log.info(`App is listening to Port ${log.highlight(config.env.PORT)}`)
+    log.info(`API is listening to Port ${log.highlight(config.env.PORT)}`)
   );
 });
 
