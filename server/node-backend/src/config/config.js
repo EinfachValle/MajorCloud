@@ -1,5 +1,5 @@
 const env = {
-    PORT: 3030
+    PORT: 1000
 }
 
 const database = {
