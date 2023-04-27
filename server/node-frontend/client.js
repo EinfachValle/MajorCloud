@@ -2,6 +2,7 @@
 // server.js
 var express = require('express');
 const path = require('path');
+const net = require('net');
 var serveStatic = require('serve-static');
 app = express();
 app.use(serveStatic(path.join(__dirname, '../../dist')));
@@ -10,8 +11,8 @@ app.use(express.json())
 var port = 80;
 var hostname = '127.0.0.1';
 
-const { Logger } = require('../node-frontend/src/logging/logging.Colors.js');
-const { Request } = require('../node-frontend/src/requests/requests.js');
+const { Logger } = require('./src/logging/logging.Colors.js');
+const { Request } = require('./src/requests/requests.js');
 
 var log = new Logger();
 
@@ -25,6 +26,8 @@ app.get('/', function (req, res) {
 });
 
 app.post('/*', (req, res) => {
-    new Request.callBackend(req.url, req.body, (response) => {
+    var request = new Request();
+    request.callBackend(req.url, req.body, (response) => {
+      res.status(response.status).send(response.content)
   })
 });

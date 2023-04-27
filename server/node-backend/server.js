@@ -5,12 +5,15 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const app = express();
 const mysql = require('mysql');
+const net = require('net');
 
-app.use(cors());
+app.use(cors(
+  
+));
 app.use(bodyParser.urlencoded({
   extended: false
 }));
-app.use(bodyParser.json());
+
 app.use(express.json());
 
 //own Libraries
@@ -114,11 +117,23 @@ app.post("/api/login", (req, res) => {
   });
 })
 
+var server = net.createServer(function (conn) {
+  console.log(log.dev('Request on Backend opened'));
+  // Handle data from client
+  conn.on('data', function (rawData) {
+    data = JSON.parse(rawData);
+    console.log(data.response);
+  });
 
-//make app listen on port set in the config file
-app.listen(config.env.PORT, () => {
-  console.log(
-    log.info(`API is listening to Port ${log.highlight(config.env.PORT)}`)
-  );
+  // Let's response with a hello message
+  conn.write(JSON.stringify({ status: 200 }));
+
+  // If connection is closed
+  conn.on('end', function () {
+    console.log(log.dev('Request on Backend closed'));
+  });
 });
 
+server.listen(config.env.PORT, 'localhost', function () {
+  console.log(log.info(`API is listening to Port ${log.highlight(config.env.PORT)}`));
+});
