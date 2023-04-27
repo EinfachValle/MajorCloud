@@ -4,7 +4,7 @@ class Requests {
     this.path = path;
   }
 
-  callBackend(path, content) {
+  callBackend(path, content, callback) {
     
   }
 }
