@@ -25,9 +25,11 @@ app.get('/', function (req, res) {
   res.sendFile(__dirname, '/index.html');
 });
 
-app.post('/*', (req, res) => {
+app.post('/api/*', async (req, res) => {
     var request = new Request();
-    request.callBackend(req.url, req.body, (response) => {
-      res.status(response.status).send(response.content)
-  })
+    request.callBackend(req.url, JSON.stringify(req.body), (rawResponse) => {
+      console.log(rawResponse)
+      //const response = JSON.parse(rawResponse)
+      //res.status(response.status).send(response.content)
+    });
 });

@@ -42,6 +42,7 @@
     "moment-timezone": "^0.5.42",
     "net": "^1.0.2",
     "node-cmd": "^5.0.0",
+    "node-fetch": "^3.3.1",
     "nodemon": "^2.0.22",
     "pinia": "^2.0.32",
     "swiper": "^9.1.1",
