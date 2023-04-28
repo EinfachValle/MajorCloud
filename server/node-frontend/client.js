@@ -28,8 +28,7 @@ app.get('/', function (req, res) {
 app.post('/api/*', async (req, res) => {
     var request = new Request();
     request.callBackend(req.url, JSON.stringify(req.body), (rawResponse) => {
-      console.log(rawResponse)
-      //const response = JSON.parse(rawResponse)
-      //res.status(response.status).send(response.content)
+      const response = JSON.parse(rawResponse)
+      res.status(response.status).send(response.content)
     });
 });

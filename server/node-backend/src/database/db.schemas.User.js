@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 const config = require("../config/config.js");
 const mysql = require("mysql");
 const bcrypt = require("bcrypt");
@@ -69,7 +70,11 @@ class User {
     }
   }
 
-  createUser(username, password, email) {
+  createUser(username, password, email, callback) {
+    if(username == undefined || password == undefined || email == undefined){
+      callback(false);
+      return;
+    }
     try {
       bcrypt.hash(password, 10, (err, passwordhash) => {
         if (err) {

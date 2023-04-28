@@ -24,13 +24,15 @@ class Request {
     };
 
     const req = http.request(options, (res) => {
-      res.on('data', (data) => {
+      let data = '';
+
+      res.on('data', (chunk) => {
+        data += chunk;
       });
 
-      res.on('end', (data) => {
-        console.log(data)
+      res.on('end', () => {
         callback(data);
-      })
+      });
     });
 
     req.on('error', (error) => {
