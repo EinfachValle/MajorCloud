@@ -14,6 +14,7 @@ import RightOfRecallPage from '../../pages/footer-pages/rightOfRecall/rightOfRec
 
 import loader from '../loader/Loader.vue';
 import Footer from '../footer/Footer.vue';
+import ToggleTheme from '../toggleTheme/ToggleTheme.vue';
 
 export default {
   name: 'Navigation',
@@ -45,7 +46,8 @@ export default {
     PrivacyPage,
     RightOfRecallPage,
     loader,
-    Footer
+    Footer,
+    ToggleTheme
   },
   async mounted() {
     if (this.loading === true) {

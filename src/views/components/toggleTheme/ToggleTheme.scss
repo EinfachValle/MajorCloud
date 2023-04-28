@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+* {
+	box-sizing: border-box;
+}
+
+#ToggleTheme {
+
+	#toggleBtn {
+		display: flex;
+		align-items: center;
+		color: var(--toggleColor);
+
+		&:hover {
+			cursor: pointer;
+		}
+
+		.toggle {
+			color: var(--color);
+		}
+	}
+}
+
+.dark {
+  --toggleColor: #ddd;
+}
+
+.light {
+  --toggleColor: #1d1f20;
+}
