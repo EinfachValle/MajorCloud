@@ -120,6 +120,11 @@
     }
   }
 
+  .hr {
+    cursor: default;
+    color: var(--color);
+  }
+
   .view-section {
     min-height: 100vh;
     z-index: 2;

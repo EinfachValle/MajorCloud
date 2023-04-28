@@ -33,6 +33,10 @@
           <li>
             <router-link class="signIn" :to="`/signin`">{{ $t('nav.signin') }}</router-link>
           </li>
+          <li class="hr">|</li>
+          <li>
+            <ToggleTheme :toggleTheme="toggleTheme" :currentTheme="currentTheme"></ToggleTheme>
+          </li>
         </ul>
       </div>
     </div>
