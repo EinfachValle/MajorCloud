@@ -3,8 +3,8 @@ const env = {
 }
 
 const database = {
-    HOSTNAME: 'localhost',
-    PORT: '7000',
+    HOSTNAME: '127.0.0.1',
+    PORT: 3306,
     USERNAME: 'nodeserver',
     PASSWORD: '#35bT-015',
     DATABASE: 'neatbeat',

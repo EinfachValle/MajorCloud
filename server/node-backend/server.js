@@ -7,34 +7,38 @@ const { User } = require('./src/database/db.schemas.User.js');
 
 const log = new Logger();
 
-new User().init();
-
 //SQL Database
-const database = mysql.createConnection({
-  host: config.database.HOSTNAME,
-  port: config.database.PORT,
-  user: config.database.USERNAME,
-  password: config.database.PASSWORD,
-  database: config.database.DATABASE,
-});
-
 //test connection to SQL Database
-database.connect(function (err) {
-  if (err) throw err;
-  console.log(
-    log.info(
-      `Connected to SQL Database (${config.database.DATABASE}) @ ${
-        config.database.HOSTNAME + ':' + config.database.PORT
-      }`
-    )
-  );
-});
+try {
+  new User().init();
+
+  const database = mysql.createConnection({
+    host: config.database.HOSTNAME,
+    port: config.database.PORT,
+    user: config.database.USERNAME,
+    password: config.database.PASSWORD,
+    database: 'neatbeat',
+  });
+
+  database.connect(function (err) {
+    if(err) throw err;
+    console.log(
+      log.info(
+        `Connected to SQL Database (${config.database.DATABASE}) @ ${
+          config.database.HOSTNAME + ':' + config.database.PORT
+        }`
+      )
+    );
+  });
+}catch(e){
+  console.log(e)
+}
 
 const server = http.createServer((req, res) => {
   const clientIP = req.socket.remoteAddress;
-  const method = req.method
+  const method = req.method;
 
-  if (clientIP === 'localhost' || clientIP === '::1' && method === "POST") {
+  if (clientIP === 'localhost' || (clientIP === '::1' && method === 'POST')) {
     let body = '';
 
     req.on('data', (chunk) => {
@@ -109,7 +113,7 @@ const server = http.createServer((req, res) => {
     res.writeHead(403, {
       'Content-Type': 'text/plain',
     });
-    res.write("Access Denied");
+    res.write('Access Denied');
     res.end();
   }
 });
