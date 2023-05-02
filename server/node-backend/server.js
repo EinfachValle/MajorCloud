@@ -1,7 +1,8 @@
 /* eslint-disable no-console */
 const http = require('http');
-const config = require('./src/config/config.js');
 const mysql = require('mysql');
+
+const config = require('./src/config/config.js');
 const { Logger } = require('./src/logging/logging.Colors.js');
 const { User } = require('./src/database/db.schemas.User.js');
 
