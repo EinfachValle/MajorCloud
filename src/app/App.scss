@@ -21,9 +21,13 @@
 .dark {
   --background: #1d1f20;
   --color: #ddd;
+  --reverse-background: #ddd;
+  --reverse-color: #1d1f20;
 }
 
 .light {
   --background: #ddd;
   --color: #1d1f20;
+  --reverse-background: #1d1f20;
+  --reverse-color: #ddd;
 }
