@@ -42,19 +42,29 @@
         height: 100%;
         padding: 25px;
 
-        h1,
-        h2 {
-          font-family: 'Exo', sans-serif;
-          text-align: start;
+        .txt {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          justify-items: flex-start;
+          align-items: center;
+
+          h1,
+          h2 {
+            font-family: 'Exo', sans-serif;
+            text-align: start;
+          }
+
+          h1 {
+            font-size: 50px;
+          }
+
+          h2 {
+            font-size: 20px;
+          }
         }
 
-        h1 {
-          font-size: 50px;
-        }
 
-        h2 {
-          font-size: 20px;
-        }
 
         form {
           width: 100%;

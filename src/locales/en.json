@@ -13,5 +13,15 @@
     "agb": "AGB",
     "rightOfRecall": "Right of recall",
     "parentsInformation": "Parents information"
+  },
+  "signup": {
+    "sign": "Create user account",
+    "createMessage": "Create your user account to get access to Neatbeat.",
+    "email": "Your E-Mail address",
+    "password": "Your password",
+    "repeatPassword": "Repeat your password",
+    "remindPassword": "Remember password",
+    "agreePrivacy": "I agree to the privacy policy and the terms and conditions. I confirm that I am over 16 years old. I agree that the registration data will be transferred to NeatBeat via an SSL connection.",
+    "create": "Create account"
   }
 }
