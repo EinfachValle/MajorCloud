@@ -8,11 +8,11 @@
         <div class="content-right">
           <h1><b>Registrierung</b></h1>
           <h2>Erstelle dein Benutzerkonto um Zugriff auf Neatbeat zu bekommen.</h2>
-          <hr>
 
           <form method="post">
             <p>
               <label for="email">Deine E-Mail Adresse</label>
+              <!-- <br> -->
               <input type="email" id="email" name="email" placeholder="example@example.com" required>
             </p>
 
@@ -28,14 +28,18 @@
               <i class="bi bi-eye-slash" id="togglePasswordRepeat"></i>
             </p>
 
-            <label for="remindPassword">Passwort Merken</label>
-            <input type="checkbox" id="remindPassword">
+            <label for="remindPassword" class="checkboxTxt">Passwort Merken
+              <input type="checkbox" id="remindPassword" name="remindPassword">
+              <span class="checkmark"></span>
+            </label>
 
-            <label for="assignPrivacy">Ich stimme den Datenschutzbestimmungen sowie den Allgemeinen
+            <label for="assignPrivacy" class="checkboxTxt" id="lastChild">Ich stimme den Datenschutzbestimmungen sowie den Allgemeinen
               Geschäftsbedingungen zu.
               Dazu bestätige ich, dass ich über 16 Jahre Alt bin. Ich stimme zu, dass die Anmeldedaten über eine
-              SSL-Verbindung an NeatBeat übertragen wird.</label>
-            <input type="checkbox" id="assignPrivacy" required>
+              SSL-Verbindung an NeatBeat übertragen werden.
+              <input type="checkbox" id="assignPrivacy" checked="checked" name="assignPrivacy" required>
+              <span class="checkmark"></span>
+            </label>
 
             <button type="submit" id="submit" class="submit">Account Erstellen</button>
           </form>
