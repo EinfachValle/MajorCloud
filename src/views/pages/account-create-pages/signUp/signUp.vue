@@ -6,7 +6,7 @@
           <i class="bi bi-person-circle"></i>
         </div>
         <div class="content-right">
-          <h1>Registrierung</h1>
+          <h1><b>Registrierung</b></h1>
           <h2>Erstelle dein Benutzerkonto um Zugriff auf Neatbeat zu bekommen.</h2>
           <hr>
 

@@ -1,4 +1,4 @@
-@import '../../../../assets/sass/var';
+@import '../../../../assets/sass/_var.scss';
 
 #signUp {
 
@@ -40,6 +40,12 @@
       .content-right {
         width: 65%;
         height: 100%;
+        padding: 25px;
+
+        h1, h2 {
+          font-family: 'Montserrat', sans-serif;
+          text-align: start;
+        }
 
         form {
 
@@ -65,6 +71,6 @@
 .light {
   #signUp {
     --sign-form-color: #1d1f20;
-    --sign-form-background: #ddd;
+    --sign-form-background: #E3E3E3;
   }
 }

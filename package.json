@@ -31,6 +31,7 @@
     "crypto-browserify": "^3.12.0",
     "dot-object": "^2.1.4",
     "file-uri-to-path": "^2.0.0",
+    "get-google-fonts": "^1.2.2",
     "i18n": "^0.15.1",
     "ioredis": "^5.3.1",
     "js-logger": "^1.6.1",
@@ -87,6 +88,11 @@
     "webpack-cli": "^5.0.1",
     "webpack-dev-middleware": "^6.0.2",
     "webpack-hot-middleware": "^2.25.3"
+  },
+  "rnpm": {
+    "assets": [
+      "./src/assets/fonts"
+    ]
   },
   "eslintConfig": {
     "root": true,

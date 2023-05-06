@@ -23,7 +23,7 @@ export default App;
 </script>
 
 <style lang="scss">
-@import '../assets/sass/var';
+// @import '../assets/sass/var';
 @import './App.scss';
 </style>
 
