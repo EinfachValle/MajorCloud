@@ -22,6 +22,7 @@ export default {
     toggleTheme() {
       this.currentTheme = ref(!this.currentTheme);
       localStorage.setItem('theme', this.currentTheme);
+      location.reload();
     },
     loadTheme() {
       if (localStorage.getItem('theme') === 'true') {
