@@ -2,7 +2,7 @@
   "name": "neat-beat",
   "version": "1.0.0",
   "private": true,
-  "description": "This template should help get you started developing with Vue 3 in Vite.",
+  "description": "Neatbeat ist eine Plattform für Künstler, Musiker und Ghostwriter womit sie leicht in Kontakt treten und einfach & Sicher Geschäfte abwickeln können.",
   "author": "Valentin Röhle",
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -91,7 +91,7 @@
   },
   "rnpm": {
     "assets": [
-      "./src/assets/fonts"
+      "./public/misc/fonts"
     ]
   },
   "eslintConfig": {

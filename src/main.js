@@ -1,5 +1,5 @@
-import { createPinia } from 'pinia'
-import { createApp } from 'vue'
+import { createPinia } from 'pinia';
+import { createApp } from 'vue';
 import App from './app/App.vue';
 import router from './router';
 import log from 'js-logger';
