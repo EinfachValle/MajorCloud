@@ -1,0 +1,27 @@
+{
+  "nav": {
+    "home": "Über Neatbeat",
+    "orders": "Aufträge",
+    "job": "Jobbörse",
+    "new": "Neuerscheinungen",
+    "signup": "Account Erstellen",
+    "signin": "Anmelden"
+  },
+  "footer": {
+    "privacy": "Datenschutz",
+    "imprint": "Impressum",
+    "agb": "AGB",
+    "rightOfRecall": "Widerrufsrecht",
+    "parentsInformation": "Informationen für Eltern"
+  },
+  "signup": {
+    "sign": "Benutzerkonto anlegen",
+    "createMessage": "Erstelle dein Benutzerkonto um Zugriff auf Neatbeat zu bekommen.",
+    "email": "Deine E-Mail Adresse",
+    "password": "Dein Passwort",
+    "repeatPassword": "Dein Passwort Wiederholen",
+    "remindPassword": "Passwort Merken",
+    "agreePrivacy": "Ich stimme den Datenschutzbestimmungen sowie den Allgemeinen Geschäftsbedingungen zu. Dazu bestätige ich, dass ich über 16 Jahre Alt bin. Ich stimme zu, dass die Anmeldedaten über eine SSL-Verbindung an NeatBeat übertragen werden.",
+    "create": "Account Erstellen"
+  }
+}

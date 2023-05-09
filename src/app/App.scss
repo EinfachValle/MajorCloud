@@ -1,0 +1,32 @@
+#app {
+  [v-cloak]>* {
+    display: none;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background);
+    color: var(--color);
+    width: 100%;
+    height: 100%;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+.dark {
+  --background: #1d1f20;
+  --color: #ddd;
+  --reverse-background: #ddd;
+  --reverse-color: #1d1f20;
+}
+
+.light {
+  --background: #ddd;
+  --color: #1d1f20;
+  --reverse-background: #1d1f20;
+  --reverse-color: #ddd;
+}
