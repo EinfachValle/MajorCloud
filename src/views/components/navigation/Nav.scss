@@ -6,7 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 #Navigation {
@@ -102,18 +102,6 @@
             transition: all 0.4s ease;
             float: right;
             color: var(--color);
-          }
-
-          .signUp {
-            padding: 10px;
-            border-radius: 10px;
-            background: #3c4042;
-          }
-
-          .signIn {
-            padding: 10px;
-            border-radius: 10px;
-            background: midnightblue;
           }
         }
       }

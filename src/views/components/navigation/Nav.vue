@@ -4,23 +4,23 @@
     <div class="navigation">
       <div class="logo">
         <router-link :to="`/home`">
-          <img src="../../../assets/nb-logo.png" alt="logo" class="logo-icon" title="NeatBeat">
+          <img src="../../../assets/img/svg/logo/MajorCloud-Logo-white.svg" alt="logo" class="logo-icon" title="Gehe zum Dashboard">
         </router-link>
       </div>
       <div class="nav">
         <nav>
           <ul class="nav-list">
             <li>
-              <router-link :to="`/home`">{{ $t('nav.home') }}</router-link>
+              <router-link :to="`/home`">Dashboard</router-link>
             </li>
             <li>
-              <router-link :to="`/orders`">{{ $t('nav.orders') }}</router-link>
+              <router-link :to="`/orders`">Aufträge</router-link>
             </li>
             <li>
-              <router-link :to="`/job`">{{ $t('nav.job') }}</router-link>
+              <router-link :to="`/job`">Jobbörse</router-link>
             </li>
             <li>
-              <router-link :to="`/new`">{{ $t('nav.new') }}</router-link>
+              <router-link :to="`/new`">Neuerscheinungen</router-link>
             </li>
           </ul>
         </nav>
@@ -28,12 +28,12 @@
       <div class="profile">
         <ul class="profile-list">
           <li>
-            <router-link class="signUp" :to="`/signup`">{{ $t('nav.signup') }}</router-link>
-          </li>
-          <li>
             <router-link class="signIn" :to="`/signin`">{{ $t('nav.signin') }}</router-link>
           </li>
           <li class="hr">|</li>
+          <li>
+            <LangSwitch></LangSwitch>
+          </li>
           <li>
             <ToggleTheme :toggleTheme="toggleTheme" :currentTheme="currentTheme"></ToggleTheme>
           </li>

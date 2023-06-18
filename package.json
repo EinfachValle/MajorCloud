@@ -2,7 +2,7 @@
   "name": "neat-beat",
   "version": "1.0.0",
   "private": true,
-  "description": "Neatbeat ist eine Plattform für Künstler, Musiker und Ghostwriter womit sie leicht in Kontakt treten und einfach & Sicher Geschäfte abwickeln können.",
+  "description": "MajorCloud ist eine Plattform für Künstler, Musiker und Ghostwriter womit sie leicht in Kontakt treten und einfach & Sicher Geschäfte abwickeln können.",
   "author": "Valentin Röhle",
   "scripts": {
     "serve": "vue-cli-service serve",
