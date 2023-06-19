@@ -9,7 +9,7 @@
 	#toggleBtn {
 		display: flex;
 		align-items: center;
-		color: var(--toggleColor);
+		color: var(--color);
 
 		&:hover {
 			cursor: pointer;
@@ -19,12 +19,4 @@
 			color: var(--color);
 		}
 	}
-}
-
-.dark {
-  --toggleColor: #ddd;
-}
-
-.light {
-  --toggleColor: #1d1f20;
 }

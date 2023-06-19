@@ -16,6 +16,7 @@ import loader from '../loader/Loader.vue';
 import Footer from '../footer/Footer.vue';
 import ToggleTheme from '../toggleTheme/ToggleTheme.vue';
 import LangSwitch from '../langSwitch/LangSwitch.vue';
+import Profile from '../Profile/Profile.vue';
 
 export default {
   name: 'Navigation',
@@ -50,6 +51,7 @@ export default {
     Footer,
     ToggleTheme,
     LangSwitch,
+    Profile
   },
   async mounted() {
     if (this.loading === true) {

@@ -75,7 +75,7 @@ export default {
 <style lang="scss" scoped>
 #langSwitch {
   .dropbtn {
-    color: var(--langColor);
+    color: var(--color);
     padding: 16px;
     font-size: 16px;
     border: none;
@@ -100,7 +100,7 @@ export default {
   }
 
   .dropdown-content a {
-    color: var(--langColor);
+    color: var(--color);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -130,19 +130,13 @@ export default {
 
 .dark {
   #langSwitch {
-    --langColor: #fff;
     --backgroundHover: #3c4042;
-    --isActiveBackground: red;
-    --background: #1d1f20;
   }
 }
 
 .light {
   #langSwitch {
-    --langColor: #000;
     --backgroundHover: #ddd;
-    --isActiveBackground: red;
-    --background: #fff;
   }
 }
 

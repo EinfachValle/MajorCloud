@@ -28,6 +28,9 @@
       <div class="profile">
         <ul class="profile-list">
           <li>
+            <Profile></Profile>
+          </li>
+          <li>
             <router-link class="signIn" :to="`/signin`">{{ $t('nav.signin') }}</router-link>
           </li>
           <li class="hr">|</li>

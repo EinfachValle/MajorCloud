@@ -10,6 +10,7 @@
     color: var(--color);
     width: 100%;
     height: 100%;
+    font-family: 'Montserrat', sans-serif;
   }
 
   * {
@@ -18,15 +19,15 @@
 }
 
 .dark {
-  --background: #1d1f20;
-  --color: #ddd;
-  --reverse-background: #ddd;
-  --reverse-color: #1d1f20;
+  --background: #1E1E2C;
+  --color: #F6F6F6;
+  --reverse-background: #F6F6F6;
+  --reverse-color: #1E1E2C;
 }
 
 .light {
-  --background: #ddd;
-  --color: #1d1f20;
-  --reverse-background: #1d1f20;
-  --reverse-color: #ddd;
+  --background: #F6F6F6;
+  --color: #1E1E2C;
+  --reverse-background: #1E1E2C;
+  --reverse-color: #F6F6F6;
 }
