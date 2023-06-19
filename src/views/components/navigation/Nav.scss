@@ -21,7 +21,7 @@
     padding: 14px 6px;
     z-index: 5;
     transition: all 0.5s ease;
-    background-color: var(--background);
+    background-color: var(--nav-bg);
     z-index: 2;
 
     .logo {
@@ -65,13 +65,13 @@
             text-decoration: none;
             transition: all 0.4s ease;
             float: right;
-            color: var(--color);
+            color: var(--nav-color);
           }
 
-          .router-link-active {
-            background-color: var(--isActiveBackground);
-            padding: 10px;
-          }
+          // .router-link-active {
+          //   background-color: var(--isActiveBackground);
+          //   padding: 10px;
+          // }
         }
       }
     }
@@ -101,7 +101,7 @@
             text-decoration: none;
             transition: all 0.4s ease;
             float: right;
-            color: var(--color);
+            color: var(--nav-color);
           }
         }
       }
@@ -110,7 +110,7 @@
 
   .hr {
     cursor: default;
-    color: var(--color);
+    color: var(--nav-color);
   }
 
   .view-section {
@@ -120,7 +120,7 @@
 
     .text {
       display: inline-block;
-      color: var(--color);
+      color: var(--nav-color);
       font-size: 25px;
       font-weight: 500;
       margin: 18px;
@@ -169,7 +169,7 @@
         .top-content {
           display: flex;
           flex-direction: row;
-          color: var(--color);
+          color: var(--nav-color);
         }
 
         .bottom-content {
@@ -188,7 +188,7 @@
               list-style-type: none;
               right: 0;
               margin: 0.5rem 1rem 0.5rem 1rem;
-              color: var(--color);
+              color: var(--nav-color);
 
               a {
                 display: flex;
@@ -198,7 +198,7 @@
                 align-items: center;
                 text-decoration: none;
                 transition: all 0.4s ease;
-                color: var(--color);
+                color: var(--nav-color);
               }
             }
           }
@@ -220,7 +220,7 @@
             height: 35px;
             border-radius: 2px;
             font-size: 20px;
-            color: var(--color);
+            color: var(--nav-color);
             text-align: center;
             line-height: 35px;
             margin-left: 3px;
@@ -250,13 +250,11 @@
 }
 
 .dark {
-  --background: #1d1f20;
-  --color: #ddd;
+  --nav-background: #575656;
   --isActiveBackground: #3c4042;
 }
 
 .light {
-  --background: #ddd;
-  --color: #1d1f20;
+  --nav-background: #575656;
   --isActiveBackground: #ddd;
 }

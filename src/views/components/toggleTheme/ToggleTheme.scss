@@ -9,14 +9,14 @@
 	#toggleBtn {
 		display: flex;
 		align-items: center;
-		color: var(--color);
+		color: var(--nav-color);
 
 		&:hover {
 			cursor: pointer;
 		}
 
 		.toggle {
-			color: var(--color);
+			color: var(--nav-color);
 		}
 	}
 }

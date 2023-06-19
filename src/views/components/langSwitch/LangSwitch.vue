@@ -75,7 +75,7 @@ export default {
 <style lang="scss" scoped>
 #langSwitch {
   .dropbtn {
-    color: var(--color);
+    color: var(--nav-color);
     padding: 16px;
     font-size: 16px;
     border: none;
