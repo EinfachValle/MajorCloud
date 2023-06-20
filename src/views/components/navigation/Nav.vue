@@ -10,7 +10,7 @@
       <div class="nav">
         <nav>
           <ul class="nav-list">
-            <li v-if="isLoggedIn">
+            <li>
               <router-link :to="`/home`">Dashboard</router-link>
             </li>
             <li v-if="isLoggedIn">
@@ -50,6 +50,7 @@
       <NewPublicPage v-if="this.$route.name === 'NewPublicPage'"></NewPublicPage>
       <SignInPage v-if="this.$route.name === 'SignInPage'"></SignInPage>
       <SignUpPage v-if="this.$route.name === 'SignUpPage'"></SignUpPage>
+      <Page404 v-if="this.$route.name === 'PageNotFound'"></Page404>
       <AgbPage v-if="this.$route.name === 'AgbPage'"></AgbPage>
       <ImprintPage v-if="this.$route.name === 'ImprintPage'"></ImprintPage>
       <ParentsInfoPage v-if="this.$route.name === 'ParentsInfoPage'"></ParentsInfoPage>

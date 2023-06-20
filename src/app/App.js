@@ -1,28 +1,25 @@
 import {ref} from 'vue';
-
-import page404 from '../views/pages/pageNotFound/page404.vue';
+// import { getAuth, onAuthStateChanged } from "firebase/auth";
 
 import Navigation from '../views/components/navigation/Nav.vue';
+
+// let auth;
 
 export default {
   name: 'app',
   components: {
-    page404,
     Navigation,
   },
   data() {
     return {
       currentTheme: ref(true),
+      // isLoggedIn: false,
     }
-  },
-  async mounted() {
-    this.loadTheme();
   },
   methods: {
     toggleTheme() {
       this.currentTheme = ref(!this.currentTheme);
       localStorage.setItem('theme', this.currentTheme);
-      // location.reload();
     },
     loadTheme() {
       if (localStorage.getItem('theme') === 'true') {
@@ -31,5 +28,17 @@ export default {
         this.currentTheme = ref(false)
       }
     }
-  }
+  },
+  async mounted() {
+    this.loadTheme();
+
+  //   auth = getAuth();
+  //   onAuthStateChanged(auth, (user) => {
+  //     if (user) {
+  //       this.isLoggedIn = true;
+  //     } else {
+  //       this.isLoggedIn = false;
+  //     }
+  //   });
+  },
 }

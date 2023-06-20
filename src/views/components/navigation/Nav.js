@@ -3,8 +3,8 @@ import OrdersPage from '../../pages/home-pages/orders/orders.vue';
 import JobPage from '../../pages/home-pages/job/job.vue';
 import NewPublicPage from '../../pages/home-pages/newPublic/newPublic.vue';
 
-import SignInPage from '../../pages/account-create-pages/signIn/signIn.vue';
-import SignUpPage from '../../pages/account-create-pages/signUp/signUp.vue';
+import SignInPage from '../../pages/profile-pages/signIn/signIn.vue';
+import SignUpPage from '../../pages/profile-pages/signUp/signUp.vue';
 
 import AgbPage from '../../pages/footer-pages/agb/agb.vue';
 import ImprintPage from '../../pages/footer-pages/imprint/imprint.vue';
@@ -12,17 +12,17 @@ import ParentsInfoPage from '../../pages/footer-pages/parentsInfo/parentsInfo.vu
 import PrivacyPage from '../../pages/footer-pages/privacy/privacy.vue';
 import RightOfRecallPage from '../../pages/footer-pages/rightOfRecall/rightOfRecall.vue';
 
+import Page404 from '../../pages/pageNotFound/page404.vue';
+
 import loader from '../loader/Loader.vue';
 import Footer from '../footer/Footer.vue';
 import ToggleTheme from '../toggleTheme/ToggleTheme.vue';
 import LangSwitch from '../langSwitch/LangSwitch.vue';
 import Profile from '../Profile/Profile.vue';
 
-// import {ref} from 'vue';
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 
 let auth;
-// const isLoggedIn = ref(false);
 
 export default {
   name: 'Navigation',
@@ -54,6 +54,7 @@ export default {
     ParentsInfoPage,
     PrivacyPage,
     RightOfRecallPage,
+    Page404,
     loader,
     Footer,
     ToggleTheme,

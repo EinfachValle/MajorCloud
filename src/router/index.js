@@ -15,9 +15,9 @@ import OrdersPage from '../views/pages/home-pages/orders/orders.vue';
 import JobPage from '../views/pages/home-pages/job/job.vue';
 import NewPublicPage from '../views/pages/home-pages/newPublic/newPublic.vue';
 
-// create-account-pages:
-import SignInPage from '../views/pages/account-create-pages/signIn/signIn.vue';
-import SignUpPage from '../views/pages/account-create-pages/signUp/signUp.vue';
+// profile-pages:
+import SignInPage from '../views/pages/profile-pages/signIn/signIn.vue';
+import SignUpPage from '../views/pages/profile-pages/signUp/signUp.vue';
 
 // footer-pages:
 import AgbPage from '../views/pages/footer-pages/agb/agb.vue';
@@ -88,6 +88,7 @@ const routes = [
   },
   {
     path: '/404',
+    name: 'PageNotFound',
     component: Page404,
   },
   {
