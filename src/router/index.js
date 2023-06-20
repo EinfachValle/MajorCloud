@@ -2,6 +2,7 @@ import {
   createWebHistory,
   createRouter
 } from "vue-router";
+import { getAuth, onAuthStateChanged } from "firebase/auth";
 
 // routes:
 
@@ -56,7 +57,7 @@ const routes = [
     component: SignInPage,
   },
   {
-    path: '/signUp',
+    path: '/register',
     name: 'SignUpPage',
     component: SignUpPage,
   },
@@ -94,6 +95,33 @@ const routes = [
     redirect: '/404',
   },
 ];
+
+// const getCurrentUser = () => {
+//   return new Promise((resolve, reject) => {
+//     const removeListener = onAuthStateChanged(
+//       getAuth(),
+//       (user) => {
+//         removeListener();
+//         resolve(user);
+//       },
+//       reject
+//     );
+//   });
+// };
+
+// router.beforeEach(async (to, from, next) => {
+//   if (to.matched.some((record) => record.meta.requiresAuth)) {
+//     if (await getCurrentUser()) {
+//       next();
+//     } else {
+//       // eslint-disable-next-line
+//       alert("you dont have access!");
+//       next("/");
+//     }
+//   } else {
+//     next();
+//   }
+// });
 
 const router = createRouter({
   history: createWebHistory(),

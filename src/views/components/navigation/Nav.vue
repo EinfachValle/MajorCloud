@@ -10,16 +10,16 @@
       <div class="nav">
         <nav>
           <ul class="nav-list">
-            <li>
+            <li v-if="isLoggedIn">
               <router-link :to="`/home`">Dashboard</router-link>
             </li>
-            <li>
+            <li v-if="isLoggedIn">
               <router-link :to="`/orders`">Aufträge</router-link>
             </li>
-            <li>
+            <li v-if="isLoggedIn">
               <router-link :to="`/job`">Jobbörse</router-link>
             </li>
-            <li>
+            <li v-if="isLoggedIn">
               <router-link :to="`/new`">Neuerscheinungen</router-link>
             </li>
           </ul>
@@ -27,10 +27,10 @@
       </div>
       <div class="profile">
         <ul class="profile-list">
-          <li>
+          <li v-if="isLoggedIn">
             <Profile></Profile>
           </li>
-          <li>
+          <li v-if="!isLoggedIn">
             <router-link class="signIn" :to="`/signin`">{{ $t('nav.signin') }}</router-link>
           </li>
           <li class="hr">|</li>

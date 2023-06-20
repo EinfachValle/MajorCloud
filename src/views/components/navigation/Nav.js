@@ -18,11 +18,18 @@ import ToggleTheme from '../toggleTheme/ToggleTheme.vue';
 import LangSwitch from '../langSwitch/LangSwitch.vue';
 import Profile from '../Profile/Profile.vue';
 
+// import {ref} from 'vue';
+import { getAuth, onAuthStateChanged } from "firebase/auth";
+
+let auth;
+// const isLoggedIn = ref(false);
+
 export default {
   name: 'Navigation',
   data() {
     return {
       loading: true,
+      isLoggedIn: false,
     };
   },
   props: {
@@ -58,6 +65,15 @@ export default {
       setTimeout(() => {
         this.loading = false;
       }, 3000);
-    }
+    };
+
+    auth = getAuth();
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        this.isLoggedIn = true;
+      } else {
+        this.isLoggedIn = false;
+      }
+    });
   },
 }
