@@ -35,6 +35,9 @@ const routes = [
     path: '/home',
     name: 'HomePage',
     component: HomePage,
+    meta: {
+      title: 'Dashboard',
+    },
   },
   {
     path: '/orders',

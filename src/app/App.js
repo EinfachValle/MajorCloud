@@ -14,7 +14,7 @@ export default {
     return {
       currentTheme: ref(true),
       // isLoggedIn: false,
-    }
+    };
   },
   methods: {
     toggleTheme() {
